@@ -30,8 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
 	'www.mana-school.com',
 	'mana-school.com',
-	'127.0.0.1'
-    	'143.198.79.233',
+	'127.0.0.1',
+    '143.198.79.233',
 	
 	]
 
@@ -135,7 +135,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static'),
-  '/Users/ccnorman/websites/manahouse/static/',
+  '/Users/ccnorman/websites/mana-school.com/static/', #Local only ?WTF Lol
 )
 APPEND_SLASH = False
 LOGGING = {
@@ -145,7 +145,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/ubuntu/mana-school.com/log/django/error.log', 
+            'filename': os.path.join(BASE_DIR.parent,'log/django/error.log'), 
         },
     },
     'loggers': {

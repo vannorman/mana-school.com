@@ -1,163 +1,105 @@
 {% load static %}
-<title> Mana Retreat Center</title>
-<link rel="shortcut icon" type="image/png" href="/static/img/sun.png">
+<title> Mana School</title>
+<link rel="shortcut icon" type="image/png" href="/static/img/potion.png"> <!-- https://www.teepublic.com/pin/10477446-mana-potion-illustration -->
+<base href="/">
 <link rel="stylesheet" href="/static/css/index.css?{{ now  }}" />
-<link rel="stylesheet" href="/static/css/faq.css?{{ now  }}" />
-<div id="top"></div>
-<div id="swoop"></div>
-<div id="title">Mana House
-    <div class="sub">Round Rock, TX</div>
-</div>
-<div id="topSpacer"></div>    
-<!-- Summary -->
-<div id="brief">
-    <div class="title">    Mana House</div>
-    <h3>
-    Round Rock, TX 
 
-    </h3>
-    <p>       Mana House is a collaborative, progressive house in Round Rock for Entrepreneurs, Arists, Healers, those seeking Financial Independence, and overall those who live together in a supportive, fun and dynamic environment. We collaborate on helping each other level up in life, and we have game and movie nights. 
-
-        <div class="booknow">
-            <a href="Coming soon!" target="_blank">BOOK NOW</a>
-        </div>
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mana School</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="top">
+    <div id="title">Mana School</div>
 </div>
 
-
-
-<!-- FAQ -->
-<div id="faq">
-    <div class="title2"> FAQ </div>
-
-    <button class="accordion">What's the neighborhood like?</button>
-        <div class="panel">
-              <p>Very nice, safe, clean neighborhood. Bike required for local shops access. Car recommended.
-        </p>
-        </div>
-    <button class="accordion">What are the meals like?</button>
-        <div class="panel">
-          <p>We have a group dinner with rotating chefs every Sunday evening at 6 pm.
-
-        </p>
-        </div>
-    <button class="accordion">What are the housemates like?</button>
-        <div class="panel">
-          <p>Entrepreneurs, artists, techies, forward thinkers, people who are just chilling and vibing, and people who want to shake the earth, and everyone in between. We foster a supportive and collaborative home.
-        </p>
-        </div>
-
-    <button class="accordion">How far from Downtown Austin?</button>
-        <div class="panel">
-        <p> 35 minutes.
-        </p>
-        </div>
-
-
-
+<div id="fold1">
+    <div class="bg"></div>
+    <ul>
+        <li><div class="title">Tutoring</div>
+        <li><div class="title">Apprenticeship</div>
+        <li><div class="title">Business Coaching</div>
+    </ul>
 </div>
 
+<canvas id="canvas"></canvas>
 
-<!-- PRICING & ACOCMODATIONS -->
-<div id="pricing">
-    <div class="title2">PRICING & ACCOMODATIONS</div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/cot.jpg)";></div>
-        <div class="desc">  
-            <h3> Cushioned Cot ($250)</h3>Our most modest accommodation (albeit no less comfortable!). We have many spaces from an under-the-stairs dwarf cavern to a spot in the walk-in closet. 
-        </div>
+<div id="fold2">
+    <div class="title">Our Foundations </div>
+    <div class="pillar">
+        <h2>
+            Technology 
+        </h2>
+        Programming, Robotics, AI, DevOps
     </div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/bunk.jpg)";></div>
-        <div class="desc">  
-            <h3> Bunk room ($600) </h3>Full bed. Room sleeps between 2-4. Bath shared with 3-4 people.
-        </div>
-    </div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/bed.jpg)";></div>
-        <div class="desc">  
-            <h3> Private bedroom ($900) </h3>Queen bed. Bath shared with 3-4 people.
 
-        </div>
+    <div class="pillar">
+        <h2>
+            Business 
+        </h2>
+        Sales, Management, Entrepreneurship
     </div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/bedroom.jpg)";></div>
-        <div class="desc">  
-            <h3> Master suite ($1300) </h3>King bed, private bath.
-        </div>
-    </div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/apt.jpg)";></div>
-        <div class="desc">  
-            <h3> RV Camper ($1100) </h3>Separate unit, Queen bed, couch, private bath, kitchen.
 
-        </div>
+    <div class="pillar">
+        <h2>
+            Wealth
+        </h2>
+        Investing, Financial Freedom, Asset Management
     </div>
-    <div class="item">
-        <div class="pic" style="background-image:url(/static/img/plus.jpg)";></div>
-        <div class="desc">  
-            <h3> TBD ($$) </h3> Our house is constantly being upgraded and new ideas are welcome!
-        </div>
-    </div>
-</div>
 
-        <div class="booknow">
-            <a href="Coming soon!" target="_blank">BOOK NOW</a>
-        </div>
-
-
-
-<!-- Mosaic -->
-<div class="title2">THE PROPERTY </div>
-<div class="container">
-    <div class="tile">
-        <img src="{% static "img/1.jpg" %}" alt="">
+    <div class="pillar">
+        <h2>
+            Hard Sciences
+        </h2>
+        Physics, Chemistry, Biology, Math
     </div>
-    <div class="tile">
-        <img src="{% static "img/2.jpg" %}" alt="">
-    </div>
-    <div class="tile">
-        <img src="{% static "img/3.jpg" %}" alt="">
-    </div>
-    <div class="tile">
-        <img src="{% static "img/4.jpg" %}" alt="">
-    </div>
-    <div class="tile">
-        <img src="{% static "img/8.jpg" %}" alt="">
-    </div>
-</div>
-
-<div id="team">
-    <div class="title2">THE TEAM</div>
-
-    <div class="member">
-        <img src="/static/img/kyle.jpg" />
-        <h2> Kyle Gaarder</h2>
-        Social Entrepreneur 
-        <br> Coliving + Human Development
     
+    <div class="pillar">
+        <h2>
+            Social-Emotional
+        </h2>
+        Self care, Tribe, Relationships
     </div>
-    <div class="member">
-        <img src="/static/img/charlie.jpg" />
-        <h2> Charlie Van Norman</h2>
-        Regenerative developer
-<br>        EdTech entrepreneur
-    </div>
+
+
+
 </div>
 
-    <br><br><br>
-        <div class="booknow">
-            <a href="https://airbnb.com/rooms/843345672223944033" target="_blank">Book on Airbnb</a>
-            <br>
-            <a href="" target="_blank">M2M App Link Coming Soon</a>
-            <br>
-        </div>
+	<div id="fold3"> 
+		<div class="item">
+			<h2>Prepare For Life</h2>
+			<p>At Mana, we believe in the maximal empowerment of the individual, through teaching skills that will enable, empower, accelerate, and energize our students. </p>
+		</div>
+		<div class="item">
+			<h2>Why Mana</h2>
+			<p>Traditional education - to sit, listen, memorize, and test - do not prepare you to succeed in the real world. We test the bounds of what is possible in transferring the expertise and wisdom of our mentors to our students.</p>
+		</div>
+		<div class="item">
+			<h2>Mentor / Facilitator model</h2>
+			<p>All of us have had great teachers; but you won't find that role at Mana. Instead, we cultivate mentors and facilitators to enable and cultivate a garden of learning and possibility for our students. Ultimately, our students decide their journey.</p>
+           
+		</div>
+		<div class="item">
+			<h2>Our model</h2>
+			<p>We offer 1-1 or group sessions for specific subjects. We are highly customized to each learner's needs; we also offer strong foundations if there is no pre-determined subject matter. As Ghandi once said, If you do not know your life's purpose, then your purpose is to find your purpose. If not, then we'll do our best to prepare our students to take the best next steps they can. </p>
+           
+		</div>
+		<div class="item">
+			<h2>Are you ready?</h2>
+			<p>Book a free consultation and class package from one of our experts. We guarantee you will look at learning in a new light, and that we can deliver exceptional results for you.</p>
+            
+		</div>
+	</div>
+	<footer>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L80,218.7C160,213,320,203,480,208C640,213,800,235,960,218.7C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+		<div class="footer-info">
+			<p>&copy; 2023 Mana School, founded by Charlie Van Norman</p>
+			<div class="social-media">
+				<a href="#"><img src="facebook.png"></a>
+    </footer>
 
 
-    <div class="title2">Mana House</div>
-    <div style="text-align:center;">Contact: Charlie 650-695-8930</div>
-<div id="footer"> Round Rock, TX </div>
-<script src="/static/js/faq.js"></script>
+<script src="/static/js/index.js"></script>
 
